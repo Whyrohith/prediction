@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    background-color: #0B8494;
+}
+
+h1 {
+    color: #FFBE98;
+    padding: 30px;
+
+}

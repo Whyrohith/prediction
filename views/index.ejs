@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+    <div id="card">
+        <form action="/result" method="post">
+            <label for="fname">First name:</label>
+            <input type="text" name="fname">
+            <label for="fname">Last name:</label>
+            <input type="text" name="lname">
+            <button type="submit">Submit</button>
+        </form>
+        <% if(locals.content){ %>
+            <ul>
+                <li class="result">
+                    <%= content.fname%> is <%=content.age%> old.
+                </li>
+                <li class="result">
+                    <%=content.fname%> is <%=content.gender%>.
+                </li>
+                <li class="result">
+                    <%=content.fname%> is an <%=content.ethinicity%>
+                </li>
+                <% } else { %>
+                    <h1>Enter the details above</h1>
+                    <% } %>
+            </ul>
+    </div>
+    <%- include("partials/footer.ejs") %>
